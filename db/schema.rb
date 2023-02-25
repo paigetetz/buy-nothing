@@ -23,6 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_201033) do
     t.string "name"
     t.string "description"
     t.string "location"
+    t.string "time"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -32,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_201033) do
     t.string "name"
     t.string "description"
     t.string "location"
+    t.string "image_url"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
