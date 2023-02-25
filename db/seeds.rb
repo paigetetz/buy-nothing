@@ -29,3 +29,4 @@ e1= Event.create(name:"AthenaHacks", location:"Los Angeles, CA", description:"So
 e2= Event.create(name:"San Francisco Pride - Looking Back & Moving Forward", location:"San Francisco, CA", description:"San Francisco Pride Celebration and Parade is the largest gathering of the LGBT community and allies in the nation. Our Pride Celebration begins on a Saturday in Civic Center Plaza in downtown San Francisco the last full weekend of June each year. The Parade, which takes place the Sunday morning of the event, kicks off from Beale Street along Market and ends at Market and 8th St. in the heart of downtown San Francisco.", time:"10:30am PST", date: 06/24/2023-06/25/2023, user_id: u1.id)
 
 puts "Events created"
+
