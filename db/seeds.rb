@@ -30,5 +30,3 @@ e2= Event.create(name:"San Francisco Pride - Looking Back & Moving Forward", loc
 
 puts "Events created"
 
-
-
