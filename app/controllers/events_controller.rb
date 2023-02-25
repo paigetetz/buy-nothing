@@ -3,7 +3,7 @@ class EventsController < ApplicationController
   def index
     render json: Event.all
   end
-  
+
   def show
     event = Event.find_by_id(params[:id])
     if event
@@ -20,5 +20,10 @@ class EventsController < ApplicationController
     else
       render json: { errors: event.errors.full_messages }, status: :unprocessable_entity
 
+  end
+
+  private
+  def event_params
+    params.permit(:name, :description, :time, :date, :location, :image_url)
   end
 end

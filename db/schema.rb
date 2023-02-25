@@ -25,6 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_201033) do
     t.string "location"
     t.date "date"
     t.string "time"
+    t.string "image_url"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

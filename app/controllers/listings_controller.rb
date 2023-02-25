@@ -21,4 +21,9 @@ class ListingsController < ApplicationController
     else
       render json: listing.errors, status: :unprocessable_entity
     end
+
+  private
+  def listing_params
+    params.permit(:name, :description, :location, :user_id, :image_url)
+  end
 end
