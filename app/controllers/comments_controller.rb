@@ -49,3 +49,5 @@ private
 def comment_params
   params.permit(:commentary, :user_id, :listing_id)
 end
+
+end

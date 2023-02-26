@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :events, only: [:index, :show, :create]
-  resources :comments, only: [:index, :create]
-  resources :listings, only: [:index, :show, :create]
+  resources :events, only: [:index, :show, :create, :update, :destroy]
+  resources :comments, only: [:index, :show, :create, :update, :destroy]
+  resources :listings, only: [:index, :show, :create, :update, :destroy]
   
   post '/signup', to: 'users#create'
   get '/me', to: 'users#show'

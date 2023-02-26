@@ -17,10 +17,11 @@ class ListingsController < ApplicationController
   def create
     listing = Listing.create(listing_params)
     if listing.valid?
-      render json: listing status: :created
+      render json: listing, status: :created
     else
       render json: listing.errors, status: :unprocessable_entity
     end
+  end
 
   def update
     listing = Listing.find_by(params[:id])
@@ -43,6 +44,7 @@ class ListingsController < ApplicationController
   end
     
   private
+
   def listing_params
     params.permit(:name, :description, :location, :user_id, :image_url)
   end

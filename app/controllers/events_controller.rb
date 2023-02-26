@@ -19,7 +19,7 @@ class EventsController < ApplicationController
       render json: event, status: :created
     else
       render json: { errors: event.errors.full_messages }, status: :unprocessable_entity
-
+    end
   end
 
   def update
@@ -29,7 +29,7 @@ class EventsController < ApplicationController
         render json: event, status: :ok
       else
         render json: { error: "Unauthorized" }, status: :unauthorized
-    end
+      end
   end
   
   def destroy
