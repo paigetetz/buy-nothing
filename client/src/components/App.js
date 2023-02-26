@@ -12,6 +12,10 @@ import UserLogin from './UserLogin';
 import UserLogout from './UserLogout';
 import UserProfile from './UserProfile';
 import UserSignup from './UserSignup';
+import Home from '../pages/Home';
+import Items from '../pages/Items';
+import EventList from '../pages/EventList';
+import AddEvents from '../pages/AddEvents';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -38,7 +42,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className='App'>
+		<div className='App font-nunito'>
 			<NavBar user={user} setUser={setUser} />
 			<Routes>
 				<Route exact path='/' element={<UserLogin onLogin={setUser} />} />
@@ -63,6 +67,22 @@ function App() {
 				<Route
 					path='/comments'
 					element={<CommentsContainer user={user} setUser={setUser} />}
+				/>
+				<Route
+					path='/home'
+					element={<Home />}
+				/>
+				<Route
+					path='/items'
+					element={<Items />}
+				/>
+				<Route
+					path='/eventlist'
+					element={<EventList />}
+				/>
+				<Route
+					path='/addevent'
+					element={<AddEvents />}
 				/>
 				<Route path='*' element={<NotFound />} />
 			</Routes>
