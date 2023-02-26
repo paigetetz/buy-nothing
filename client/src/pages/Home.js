@@ -9,7 +9,7 @@ export default function Home() {
         <div className='md:grid md:grid-cols-2 items-center px-36 py-8'>
           <div className='text-white'>
             <h1 className='text-3xl md:text-6xl'>About Us</h1>
-            <p className='text-xl md:text-2xl py-4 tracking-wider text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p className='text-xl md:text-2xl py-4 tracking-wider text-justify'>We have created a website that enables users to successfully give and take their unwanted things and participate in a variety of events to raise awareness or foster community. We want to use this platform to unite individuals around a similar goal and contribute to the world's environmental improvement.</p>
 
           </div>
           <div className="grid place-items-center py-4 drop-shadow-3xl shadow-black">
