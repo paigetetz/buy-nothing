@@ -20,7 +20,7 @@ export default function Home() {
         <section
           className="flex flex-col w-full h-[500px] bg-cover bg-fixed bg-center justify-center items-center bg-parallex1 text-secondary">
           <h1 className="text-5xl font-semibold mt-20 mb-10">
-            Buy and Sell Recycled goods
+            Give your used items
           </h1>
 
           <span className="text-center font-bold text-xl my-20">
@@ -42,10 +42,10 @@ export default function Home() {
           <div className='text-white'>
             <h1 className='text-5xl'>Tips to save evnronment:</h1>
             <ul className="text-xl ml-5 py-4">
-              <li className="list-disc py-1">Reduce, reuse, and recycle.</li>
-              <li className="list-disc py-1">Bring your own reusable cup.</li>
-              <li className="list-disc py-1">Avoid products with microbeads.</li>
-              <li className="list-disc py-1">Invest in a reusable water bottle.</li>
+              <li className="list-disc py-1">Plant a tree.</li>
+              <li className="list-disc py-1">Conserve water.</li>
+              <li className="list-disc py-1">Avoid plastic-wrapped fruit and veg.</li>
+              <li className="list-disc py-1">Invest in a wooden/bamboo toothbrush.</li>
             </ul>
           </div>
         </section>
