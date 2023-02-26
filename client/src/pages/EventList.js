@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoLocationOutline } from "react-icons/io5";
+// import { IoLocationOutline } from "react-icons/io5";
 
 export default function EventList() {
   return (
@@ -17,7 +17,7 @@ export default function EventList() {
             Eco Meet Event Title
           </div>
           <div className='flex flex-1'>
-            <IoLocationOutline className='w-6 h-6 text-black' />
+            {/* <IoLocationOutline className='w-6 h-6 text-black' /> */}
             ABC Enclave, 224 Street.
           </div>
           <div className='grid place-items-center'>

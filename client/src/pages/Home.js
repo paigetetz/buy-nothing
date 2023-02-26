@@ -40,7 +40,7 @@ export default function Home() {
 
         <section className="p-20 space-y-8">
           <div className='text-white'>
-            <h1 className='text-5xl'>Tips to save evnronment:</h1>
+            <h1 className='text-5xl'>Tips to save environment:</h1>
             <ul className="text-xl ml-5 py-4">
               <li className="list-disc py-1">Plant a tree.</li>
               <li className="list-disc py-1">Conserve water.</li>

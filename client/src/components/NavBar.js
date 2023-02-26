@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate, NavLink } from 'react-router-dom'
-import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+// import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 function NavBar(props) {
     return (

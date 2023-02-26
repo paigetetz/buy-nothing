@@ -28,7 +28,7 @@ export default function AddEvent() {
                             <input type="text" placeholder="Product" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" />
 
                             <label class="block mt-3 font-semibold"> Event Agenda </label>
-                            <input type="number" placeholder="888" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" />
+                            <input type="text" placeholder="Add a short bio" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" />
 
                             <label class="block mt-3 font-semibold"> Choose File </label>
                             <input type="file" onChange={handleChange} class="w-full px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" />
