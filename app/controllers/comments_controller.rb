@@ -24,6 +24,26 @@ class CommentsController < ApplicationController
     end
   end
 
+  def update
+    comment = Comment.find_by(params[:id])
+      if comment
+        comment.update(comment_params)
+        render json: comment
+      else
+        render json: { error: "Comment not found" }, status: :not_found
+    end
+  end
+  
+  def destroy
+    comment = Comment.find_by(params[:id])
+        if comment.user == @current_user
+        comment.destroy
+        head :no_content
+        else
+        render json: { errors: 'Unauthorized' }, status: :unauthorized
+        end
+    end
+
 private
 
 def comment_params

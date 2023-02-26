@@ -8,7 +8,7 @@ puts "Done!"
 
 puts "Seeding users...👥"
 
-u1= User.create(username:"user", password:"1234", email: "cerimay@gmail.com", profile_pic:"https://i.natgeofe.com/k/5af79b71-007d-46f8-8efe-bf37a504195b/california-golden-gate-bridge.jpg", bio: "I'm a bio"))
+u1= User.create(username:"user", password:"1234", email: "cerimay@gmail.com", profile_pic:"https://i.natgeofe.com/k/5af79b71-007d-46f8-8efe-bf37a504195b/california-golden-gate-bridge.jpg", bio: "I'm a bio")
 
 puts "Users created"
 
