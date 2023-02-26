@@ -18,8 +18,28 @@ class UsersController < ApplicationController
       end
   end
 
+  def update
+    user = User.find_by(params[:id])
+      if user == @current_user
+        user.update(user_params)
+        render json: user, status: :ok
+      else
+        render json: { error: "Unauthorized" }, status: :not_found
+    end
+  end
+  
+  def destroy
+    user = User.find_by(params[:id])
+        if user == @current_user
+        user.destroy
+        head :no_content
+        else
+        render json: { errors: 'Unauthorized' }, status: :unauthorized
+        end
+    end
+
   private
   def user_params
-    params.permit(:username, :email, :password, :profile_pic)
+    params.permit(:username, :email, :password, :profile_pic, :bio)
   end
 end
